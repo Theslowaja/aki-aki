@@ -1,0 +1,33 @@
+{
+  "name": "akinator-api-middleware",
+  "version": "1.0.0",
+  "description": "Secure Akinator API Middleware with rate limiting and API key auth",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "generate-key": "node scripts/generate-key.js"
+  },
+  "dependencies": {
+    "@aqul/akinator-api": "^1.0.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.3.2",
+    "morgan": "^1.10.0",
+    "node_extra_ca_certs_mozilla_bundle": "^1.0.7",
+    "rate-limit-redis": "^4.2.0",
+    "uuid": "^9.0.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
