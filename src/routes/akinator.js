@@ -1,7 +1,7 @@
 // src/routes/akinator.js
 const express = require("express");
 const router = express.Router();
-const { Aki } = require("aki-api");
+const { Aki } = require("@aqul/akinator-api");
 
 const authMiddleware = require("../middleware/auth");
 const { perKeyRateLimiter, sessionCreationLimiter } = require("../middleware/rateLimiter");
